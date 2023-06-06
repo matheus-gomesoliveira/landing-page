@@ -9,10 +9,20 @@ export const MenuList = styled.ul`
 `
 
 export const ItemList = styled.li`
-    text-decoration: none;
+    display: inline-block;
     font-weight: bold;
-    background: -webkit-linear-gradient(#6982C8, #6949A8, #700E6D);
     font-size: 24px;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+
+
+    &:hover{
+        a{
+            box-shadow: 0 5px  #38077C;
+        }
+    }
+
+    a{
+        color: #38077C;
+        transition: all 0.25s ease-out;
+    }
+    
 `
