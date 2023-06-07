@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const GradientButton = styled.button`
+export const Button = styled.button`
     width: 240px;
     height: 60px;
     background-color:#38077C;
@@ -16,5 +16,9 @@ export const GradientButton = styled.button`
         border: 3px solid #38077C;
         background-color: #FFFFFF;
         color: #38077C;
-}
+    }
+
+        @media (max-width:1024px) {
+        display: none ;
+    }
 `

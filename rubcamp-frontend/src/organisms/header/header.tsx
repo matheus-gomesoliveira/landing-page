@@ -4,11 +4,15 @@ import Menu from "../../molecules/Menu/menu"
 import Button from "../../molecules/Botão/botao"
 
 const Header = () => {
-    return <S.Box>
-        <Logo></Logo>
-        <Menu></Menu>
-        <Button></Button>
-</S.Box>
+    return (
+    <S.Box>
+        <S.Nav>
+            <Logo></Logo>
+            <Menu></Menu>
+            <Button></Button>
+        </S.Nav>
+    </S.Box>
+)
 }
 
 export default Header

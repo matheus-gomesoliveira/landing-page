@@ -1,7 +1,7 @@
 import * as S from "./styles"
 
 const Button = () =>{
-    return <S.GradientButton>BAIXE AGORA</S.GradientButton>
+    return <S.Button>BAIXE AGORA</S.Button>
 }
 
 export default Button

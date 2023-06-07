@@ -1,7 +1,7 @@
 import * as S from "./styles"
 
-const FirstSection = () =>{
+const HeroSection = () =>{
     return <S.StyledWhiteTitle>O BANCO DA RUB</S.StyledWhiteTitle> 
 }
 
-export default FirstSection
+export default HeroSection

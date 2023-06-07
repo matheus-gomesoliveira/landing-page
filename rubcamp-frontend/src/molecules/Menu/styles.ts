@@ -6,6 +6,10 @@ export const MenuList = styled.ul`
     justify-content: space-between;
     margin: 0 30px;
     width: 650px;
+    
+    @media (max-width:1024px) {
+        display: none ;
+    }
 `
 
 export const ItemList = styled.li`
