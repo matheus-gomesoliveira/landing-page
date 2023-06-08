@@ -18,7 +18,5 @@ export const Button = styled.button`
         color: #38077C;
     }
 
-        @media (max-width:1024px) {
-        display: none ;
-    }
+
 `
