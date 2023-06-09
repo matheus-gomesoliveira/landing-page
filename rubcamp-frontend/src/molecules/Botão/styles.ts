@@ -17,6 +17,4 @@ export const Button = styled.button`
         background-color: #FFFFFF;
         color: #38077C;
     }
-
-
 `
