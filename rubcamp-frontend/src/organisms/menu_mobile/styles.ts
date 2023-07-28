@@ -5,7 +5,7 @@ export const Container = styled.section`
     width: 100%;
     height: 100%;
     top: 0;
-    z-index: 5;
     display: flex;
     background-color: #FFFFFF;
+    z-index: 15
 `

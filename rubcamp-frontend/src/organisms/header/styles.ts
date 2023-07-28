@@ -10,6 +10,7 @@ export const Box = styled.header`
     justify-content: center;
     align-items: center;
     background-color: #FFFFFF;
+    z-index: 5;
 
     @media (max-width: 1024px) {
         height: 80px;

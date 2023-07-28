@@ -1,7 +1,6 @@
 import * as S from "./styles"
 import { arrowStyles } from "./styles";
 import QuadroRub from "../../assets/janleas_box.svg"
-import { Carousel } from "react-responsive-carousel";
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import Janela1 from "../../assets/janela1.svg"
 import Janela2 from "../../assets/janela2.svg"
@@ -12,7 +11,7 @@ import Janela4 from "../../assets/janela4.svg"
 const SimplesAssim = () => {
 
     return (
-      <S.Container>
+      <S.Container id="simples-assim">
         <S.Titulo>SIMPLES ASSIM</S.Titulo>
           <S.Quadro>
             <img src={QuadroRub} alt="" />
@@ -20,16 +19,15 @@ const SimplesAssim = () => {
           <S.StyledCarousel
             showThumbs={false}
             showStatus={false}
-            showIndicators={false}
-            showArrows
-            swipeable
+            showIndicators={true}
+            showArrows={false}
+            swipeable={true}
             infiniteLoop
             autoPlay
-            interval={5000}
+            interval={2000}
             stopOnHover
             emulateTouch
-            dynamicHeight={false}
-            useKeyboardArrows
+            dynamicHeight={true}
             selectedItem={0}
             renderArrowPrev={(onClickHandler, hasPrev, label) =>
               hasPrev && (

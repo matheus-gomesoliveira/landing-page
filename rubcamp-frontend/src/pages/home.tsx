@@ -4,12 +4,19 @@ import * as S from "./styles"
 import MenuMobile from "../organisms/menu_mobile/"
 import SimplesAssim from '../organisms/simples-assim';
 import HeroSection from '../organisms/hero/hero';
+import Vantagens from '../organisms/vantagens';
+import Avaliacoes from '../organisms/avaliações';
+import CTA from '../organisms/CTA';
+import Footer from '../organisms/footer';
+import FooterMobile from '../organisms/footer-mobile';
 
 function Home() {
   const [menuIsVisible, setMenuIsVisible] = useState(false);
-  const [setWindowWidth] = useState(window.innerWidth);
+  const [windowWidth, setWindowWidth] = useState(0);
 
   useEffect(() => {
+    setWindowWidth(window.innerWidth);
+
     const handleResize = () => {
       setWindowWidth(window.innerWidth);
     };
@@ -35,6 +42,15 @@ function Home() {
         <Header setMenuIsVisible={setMenuIsVisible} />
         <HeroSection />
         <SimplesAssim />
+        <Vantagens />
+        <Avaliacoes />
+        <CTA />
+        {window.innerWidth > 830 ?(
+        <Footer />
+        ) :
+        (
+        <FooterMobile />
+        )}
       </S.Container>
     </>
   );
